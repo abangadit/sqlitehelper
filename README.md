@@ -14,7 +14,8 @@ public final String[] table_user_field = { "user_id", "member_id",
 		"member_username", "member_email", "member_mobile",
 		"member_rekening", "member_photo", "region_name", "level_name",
 		"member_score", "member_token" };
-// field table user
+field type table user
+===================================
 public final String[] table_type = { "text", "text", "text", "text",
 		"text", "text", "text", "text", "text", "text", "text"};
 
@@ -39,14 +40,14 @@ int total_row = database.getRowTable(config.TABLE_USER);
 
 insert data to table
 ===================================
---declare field value 
+declare field value 
 ===================================
--- MUST BE SAME LENGTH WITH FIELD COLUMN !
+-- MUST BE SAME LENGTH WITH FIELD COLUMN ! --
 
 String field_value[] = { "", member_id, member_username, member_email,
 				member_mobile, member_rekening, member_photo, region_name, level_name,
 				member_score, member_token };
---insert process--		
+insert process		
 ===================================		
 database.insertDataToTable(config.TABLE_USER, config.table_user_field,field_value);
 
